@@ -257,3 +257,13 @@ nav a {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .btn {
+  font-size: 2rem;
+  background: #17A2B8;
+  color: #FFFFFF;
+  padding: 1.5rem 0;
+  margin-right: 2rem;
+  text-align: center;
+  border-radius: 1.6rem;
+  border: 1px solid #C0C0C0;
+}

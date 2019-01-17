@@ -2,3 +2,15 @@
 .border {
   border-bottom: 2px dashed @navigation-border;
 }
+
+// .button(@button-bg, @white, @silver)
+.button(@bg-color, @text-color, @border-color) {
+  font-size: 2rem;
+  background: @bg-color;
+  color: @text-color;
+  padding: 1.5rem 0;
+  margin-right: 2rem;
+  text-align: center;
+  border-radius: 1.6rem;
+  border: 1px solid @border-color;
+}
