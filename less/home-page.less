@@ -24,6 +24,22 @@
         border-radius: 10px;
       }
     }
+    @media @mobile {
+      flex-direction: column;
+      .text-content {
+        width: 100%;
+        padding-right: 0;
+      }
+      .img-content {
+        width: 100%;
+        padding-left: 0;
+        img {
+          width: 95vw;
+          object-fit: contain;
+          border-radius: 10px;
+        }
+      }
+    }
   }
   .inverse-content {
     padding-bottom: 30px;
@@ -36,12 +52,19 @@
       padding-right: 1%;
       padding-left: 0;
     }
+    @media @mobile {
+      display: flex;
+      flex-direction: column-reverse;
+    }
   }
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
     img {
       border-radius: 10px;
+    }
+    @media @mobile {
+      width: 100%;
     }
   }
   .content-pick {
@@ -52,6 +75,13 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+    }
+    @media @mobile {
+      flex-direction: column;
+      .destination {
+        width: 75%;
+      }
+      align-items: center;
     }
   }
   .btn {
